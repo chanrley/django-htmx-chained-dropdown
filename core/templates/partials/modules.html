@@ -1,0 +1,6 @@
+<select class = "custom-select mb-4" name = "course">
+    <option selected>Open this select menu</option>
+    {% for module in modules %}
+        <option value="{{module.pk}}">{{ module.name}}</option>
+    {% endfor %}
+</select>
